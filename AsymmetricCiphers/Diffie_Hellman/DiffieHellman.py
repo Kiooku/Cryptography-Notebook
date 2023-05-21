@@ -1,5 +1,3 @@
-from copy import Error
-from re import A
 from sympy import isprime
 from os import linesep
 
@@ -11,9 +9,26 @@ class DiffieHellman:
         self.g = g
 
     def create_public_key(self, secret: int)-> int:
+        """ Diffie-Hellman key creation
+
+        Args:
+            secret (int): private key
+
+        Returns:
+            int: public key
+        """
         return pow(self.g, secret, self.p)
 
-    def create_share_secret(self, k_pub: int, k_priv: int)-> int:
+    def create_shared_secret(self, k_pub: int, k_priv: int)-> int:
+        """ Diffie-Hellman share secret creation
+
+        Args:
+            k_pub (int): other public key
+            k_priv (int): own private key
+
+        Returns:
+            int: shared secret
+        """
         return pow(k_pub, k_priv, self.p)
     
 if __name__ == "__main__":
@@ -29,8 +44,8 @@ if __name__ == "__main__":
     b_priv: int = 781
     B_pub: int = dh.create_public_key(b_priv)
 
-    alice_shared_secret: int = dh.create_share_secret(B_pub, a_priv)
-    bob_shared_secret: int = dh.create_share_secret(A_pub, b_priv)
+    alice_shared_secret: int = dh.create_shared_secret(B_pub, a_priv)
+    bob_shared_secret: int = dh.create_shared_secret(A_pub, b_priv)
 
     print(f"p: {p}; g: {g}",
           f"Alice private key: {a_priv}; Alice public key: {A_pub}",

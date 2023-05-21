@@ -28,7 +28,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Diffie-Hellman Key Exchange
 
-- [ ] ElGamal PKC
+- [X] ElGamal PKC
 
 - [ ] RSA
 
