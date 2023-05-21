@@ -4,7 +4,7 @@
 
 It's a repository with some of the cryptographic implementations I have done for learning purposes.
 
-## Why the repository is almost empty ?
+## Why the repository is almost empty ?
 
 I'm learning cryptography by myself, until then by solving cryptography challenges on CryptoHack and Root-Me.
 
@@ -16,13 +16,13 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### Symmetric Ciphers
 
-**Note** Work in progress
+> **Note** Work in progress
 
 - [ ] AES (ECB / CBC / CFB / OFB / CTR)
 
 ### Asymmetric Ciphers
 
-**Note** Work in progress
+> **Note** Work in progress
 
 #### Implementations
 
@@ -38,34 +38,34 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### Hash Functions
 
-**Note** Basic knowledge -> Need to learn more
+> **Note** Basic knowledge -> Need to learn more
 
 ### PRNG
 
-**Note** Need to learn
+> **Note** Need to learn
 
 ### Zero-Knowledge Proofs
 
-**Note** Need to learn
+> **Note** Need to learn
 
 ### Homomorphic Encryption
 
-**Note** Ongoing learning of lattices to understand homomorphic encryption
+> **Note** Ongoing learning of lattices to understand homomorphic encryption
 
 ### Post-Quantum
 
-**Note** Ongoing learning of lattices and learning with errors to understand Post-Quantum cryptography
+> **Note** Ongoing learning of lattices and learning with errors to understand Post-Quantum cryptography
 
 ### Mathematics
 
 #### Elliptic Curves
 
-**Note** Need to learn more
+> **Note** Need to learn more
 
 #### Lattices
 
-**Note** Work in progress
+> **Note** Work in progress
 
 ### Learning with errors (LWE)
 
-**Note** Need to learn
+> **Note** Need to learn
