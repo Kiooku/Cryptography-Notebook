@@ -1,6 +1,6 @@
 # Diffie-Hellman Key Exchange (1976)
 
-**Creators:** WHITFIELD DIFFIE and MARTIN E. HELLMAN
+**Creators:** *WHITFIELD DIFFIE* and *MARTIN E. HELLMAN*
 
 The Diffie-Helman key exchange algorithm provides a **method of publicly sharing a random secret key**, it does not achieve the full goal of being a public key cryptosystem.
 
@@ -10,8 +10,8 @@ The Diffie-Helman key exchange algorithm provides a **method of publicly sharing
 
 ### Public parameter creation
 
-A trusted party chooses and publishes a (large) prime p
-and an integer g having large prime order in $\mathbb{F}^∗_p$ .
+A trusted party chooses and publishes a (large) prime $p$
+and an integer $g$ having large prime order in $\mathbb{F}^∗_p$ .
 
 ### Private computations
 
