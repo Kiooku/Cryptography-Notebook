@@ -34,6 +34,8 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 #### Attacks
 
+##### Oracle Attack
+
 - [ ] ElGamal with a Diffie-Hellman Oracle
 
 ### Hash Functions
@@ -57,6 +59,18 @@ Learn, understand, and create project is a long process, which is why the reposi
 > **Note** Ongoing learning of lattices and learning with errors to understand Post-Quantum cryptography
 
 ### Mathematics
+
+#### Algorithm and Theorem
+
+> **Note** Work in progress
+
+- [X] Euclidean algorithm
+
+- [X] Shanks’s Babystep–Giantstep Algorithm
+
+- [X] Chinese Remainder Theorem
+
+- [ ] Pohlig-Hellman Algorithm
 
 #### Elliptic Curves
 
