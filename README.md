@@ -70,7 +70,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Chinese Remainder Theorem
 
-- [ ] Pohlig-Hellman Algorithm
+- [X] Pohlig-Hellman Algorithm
 
 #### Elliptic Curves
 
