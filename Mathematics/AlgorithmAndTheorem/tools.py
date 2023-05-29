@@ -1,4 +1,5 @@
 import math
+from euclideanAlgorithm import extended_euclidean_algorithm
 
 def find_order(g: int, p: int)-> int:
     """ Find the order of an element g of a group G
@@ -17,26 +18,27 @@ def find_order(g: int, p: int)-> int:
     return n
 
 
-def binary_search(A: list, B: list)-> tuple:
+def binary_search(A: dict, B: dict)-> tuple:
     """ Binary search to have a complexity of O(n log(n))
 
     Args:
-        A (list): baby step list
-        B (list): giant step list
+        A (dict): baby step dictionary
+        B (dict): giant step dictionary
 
     Returns:
         tuple: index for the solution
     """
-    B.sort()
+    sorted_A: dict = {k: v for k, v in sorted(A.items(), key = lambda item: item[1])}
+    sorted_B: dict = {k: v for k, v in sorted(B.items(), key = lambda item: item[1])}
     i: int = 0
-    for T in A:
+    for i, T in sorted_A.items():
         L: int = 0
         R: int = len(A) - 1
         while L <= R:
             m: int = (L + R) // 2
-            if (B[m] < T):
+            if (sorted_B[m] < T):
                 L = m + 1
-            elif B[m] > T:
+            elif sorted_B[m] > T:
                 R = m -1
             else:
                 return (i, m)
@@ -102,3 +104,10 @@ def get_product_of_prime_powers(N: int) -> dict[int, int]:
             current_prime = next_prime(current_prime)
 
     return res
+
+def modular_multiplicative_inverse(a: int, b: int)-> int:
+    g, x, y = extended_euclidean_algorithm(a, b)
+    if g != 1:
+        raise Exception(f"{a} and {b} are not coprime !")
+    
+    return x%b

@@ -16,9 +16,9 @@ def babystep_giantstep(g: int, h: int, p: int)-> int:
     """
     N: int = find_order(g,p)
     n: int = ceil(sqrt(N))
-    baby_steps: list = [pow(g, i, p) for i in range(n+1)]
+    baby_steps: dict = {i: pow(g, i, p) for i in range(n+1)}
     u: int = pow(g, -n, p)
-    giant_steps: list = [(h*pow(u, j))%p for j in range(n+1)]
+    giant_steps: dict = {j: (h*pow(u, j, p))%p for j in range(n+1)}
     
     i, j = binary_search(baby_steps, giant_steps)
     x: int = i + j*n
