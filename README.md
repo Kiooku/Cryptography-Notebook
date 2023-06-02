@@ -36,7 +36,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ##### Oracle Attack
 
-- [ ] ElGamal with a Diffie-Hellman Oracle
+- [X] ElGamal with a Diffie-Hellman Oracle
 
 ### Hash Functions
 
