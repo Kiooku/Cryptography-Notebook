@@ -4,8 +4,6 @@
 
 The Elgamal public key encryption algorithm is based on the **discrete log problem** and is closely related to **Diﬃe–Hellman key exchange**.
 
-> **Warning** [Diffie-Hellman oracle breaks](#attacks-using-oracle) the Elgamal PKC.
-
 ## Algorithm
 
 > **Note** Bob wants to send a message to Alice using Elgamal PKC.

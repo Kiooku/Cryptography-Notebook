@@ -8,7 +8,7 @@
 
 ## Oracle attack
 
-<u>General definition:</u> *In the context of cryptography, an oracle is a black box or a computational entity that provides certain services or functionalities related to a cryptographic algorithm.*
+<ins>General definition:</ins> *In the context of cryptography, an oracle is a black box or a computational entity that provides certain services or functionalities related to a cryptographic algorithm.*
 
 ### Decryption Oracle
 

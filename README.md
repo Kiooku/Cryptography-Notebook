@@ -6,7 +6,7 @@ It's a repository with some of the cryptographic implementations I have done for
 
 ## Why the repository is almost empty ?
 
-I'm learning cryptography by myself, until then by solving cryptography challenges on CryptoHack and Root-Me.
+I'm learning cryptography by myself, until then by solving cryptography challenges on [CryptoHack](https://cryptohack.org/user/Kioku/) and Root-Me.
 
 Currently, I'm reading "An Introduction to Mathematical Cryptography" (Second edition), and in order to apply the mathematical knowledge and get a better understanding, I decided to create this repository.
 
@@ -30,13 +30,17 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] ElGamal PKC
 
-- [ ] RSA
+- [X] RSA
 
 #### Attacks
 
 ##### Oracle Attack
 
 - [X] ElGamal with a Diffie-Hellman Oracle
+
+#### Man-in-the-Middle Attack *(MITM)*
+
+- [ ] Diffie-Hellman MITM
 
 ### Hash Functions
 
@@ -83,3 +87,9 @@ Learn, understand, and create project is a long process, which is why the reposi
 ### Learning with errors (LWE)
 
 > **Note** Need to learn
+
+## Resources
+
+- [An Introduction to Mathematical Cryptography (Second Edition)](https://link.springer.com/book/10.1007/978-1-4939-1711-2)
+
+- [CryptoHack](https://cryptohack.org/)
