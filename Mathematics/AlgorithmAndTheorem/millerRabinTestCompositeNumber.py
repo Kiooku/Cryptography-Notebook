@@ -30,7 +30,7 @@ def miller_rabin_test_composite_number(n: int, a: int) -> bool:
     Returns:
         bool: True->composite number
     """
-    if n%2 == 0 or (gcd(a,n) < n and gcd(a,n) > 1):
+    if n%2 == 0 or 1 < gcd(a, n) < n:
         print("a")
         return True
 

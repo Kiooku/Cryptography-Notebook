@@ -78,7 +78,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Miller–Rabin test for composite numbers
 
-- [ ] Pollard’s p − 1 factorization algorithm
+- [X] Pollard’s p − 1 factorization algorithm
 
 #### Elliptic Curves
 
