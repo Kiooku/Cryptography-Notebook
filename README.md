@@ -26,17 +26,17 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 #### Implementations
 
-- [X] Diffie-Hellman Key Exchange
+- [X] [Diffie-Hellman Key Exchange](./AsymmetricCiphers/Diffie_Hellman/README.md)
 
-- [X] ElGamal PKC
+- [X] [ElGamal PKC](./AsymmetricCiphers/ElGamal/README.md)
 
-- [X] RSA
+- [X] [RSA](./AsymmetricCiphers/RSA/README.md)
 
 #### Attacks
 
 ##### Oracle Attack
 
-- [X] ElGamal with a Diffie-Hellman Oracle
+- [X] [ElGamal with a Diffie-Hellman Oracle](./AsymmetricCiphers/ElGamal/README.md#attacks-using-oracle)
 
 #### Man-in-the-Middle Attack *(MITM)*
 
@@ -75,6 +75,10 @@ Learn, understand, and create project is a long process, which is why the reposi
 - [X] Chinese Remainder Theorem
 
 - [X] Pohlig-Hellman Algorithm
+
+- [X] Miller–Rabin test for composite numbers
+
+- [ ] Pollard’s p − 1 factorization algorithm
 
 #### Elliptic Curves
 

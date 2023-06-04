@@ -44,6 +44,12 @@ There are several possible attacks on RSA if the implementation is poorly done.
 
 [CryptoHack](https://cryptohack.org/challenges/rsa/) offers many interesting challenges on this subject.
 
+## Implementation advices
+
+With poorly chosen secret primes $p$ and $q$, **Pollard's p-1 factorization algorithm** can be used to find $p$ and $q$.
+
+In order to avoid danger of *Pollard's p-1 factorization algorithm* we simply need to check that the chosen secret primes have the property that neither $p-1$ nor $q-1$ factors entirely into small primes.
+
 ## Resource
 
 - *An Introduction to Mathematical Cryptography (Second edition)*
