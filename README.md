@@ -88,6 +88,28 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 > **Note** Work in progress
 
+> **Note** The [lattice folder](./Mathematics/Lattice/) is the start of another project. The code tries to follow good code practices.
+
+> **Warning** I'm still learning by myself Lattice, so I may have made a few mistakes
+
+- [X] Create a Lattice class
+
+- [ ] Create a Knapsack class
+
+- [X] Gram-Schmidt Algorithm
+
+- [X] Hadamard ratio
+
+- [ ] Babai's closest vertext algorithm
+
+- [ ] Babai's closest plane algorithm
+
+- [X] Gaussian Lattice reduction
+
+- [ ] LLL algorithm
+
+- [ ] BKZ-LLL algorithm
+
 ### Learning with errors (LWE)
 
 > **Note** Need to learn

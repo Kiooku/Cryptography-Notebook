@@ -22,6 +22,7 @@ def pollard_p_minus_1_factorization_algorithm(N: int, bound: int = 10000)-> int:
 
 
 if __name__ == "__main__":
+    # # An Introduction to Mathematical Cryptography (Second edition) (Example 3.30 and 3.31)
     N_x: list[int] = [13927189, 168441398857]
 
     for N in N_x:
