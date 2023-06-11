@@ -80,6 +80,16 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Pollard’s p − 1 factorization algorithm
 
+- [ ] Gaussian elimination
+
+- [X] Fermat's Factorization
+
+- [X] Kraitchik’s Factorization
+
+- [ ] 
+
+- [ ] Quadratic sieve
+
 #### Elliptic Curves
 
 > **Note** Need to learn more

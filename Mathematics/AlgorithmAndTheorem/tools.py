@@ -43,7 +43,7 @@ def binary_search(A: dict, B: dict)-> tuple:
             else:
                 return (i, m)
         i += 1
-        
+
     return (-1, -1)
 
 
@@ -82,7 +82,28 @@ def next_prime(p: int) -> int:
             return p
 
 
-def get_product_of_prime_powers(N: int) -> dict[int, int]:
+def get_all_prime_numbers(end: int) -> list:
+    """ Give a list of prime number between [2;end]
+
+    Args:
+        end (int): prime number lower or equal to this number
+
+    Returns:
+        list: all prime numbers lower than or equal to 'end'
+    """
+    res: list = []
+    p: int = 2
+    if end < 2:
+        raise Exception("Please input a number higher than 2")
+
+    while p <= end:
+        res.append(p)
+        p = next_prime(p)
+    
+    return res
+
+
+def get_product_of_prime_powers(N: int, smoothness: float = float("inf")) -> dict[int, int]:
     """ N factors into a product of prime powers
 
     Args:
@@ -94,6 +115,8 @@ def get_product_of_prime_powers(N: int) -> dict[int, int]:
     res: dict[int, int] = {}
     current_prime: int = 2
     while N != 1:
+        if (current_prime > smoothness):
+            raise Exception(f"N is not {smoothness}-smooth")
         if N % current_prime == 0:
             N //= current_prime
             if current_prime in res:
