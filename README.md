@@ -86,9 +86,9 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Kraitchik’s Factorization
 
-- [ ] 
+- [ ] A three step factorization procedure (Relation Building / Elimination / GCD Computation)
 
-- [ ] Quadratic sieve
+- [X] Quadratic sieve
 
 #### Elliptic Curves
 
