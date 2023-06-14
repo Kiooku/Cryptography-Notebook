@@ -18,13 +18,13 @@ To do that, Alice chooses a plaintext $m$ and a random string of data $r$, and t
 
 Bob chooses two primes $p$ and $q$ which are his **private key**.
 
-Then he chooses a number $a$ with $(\frac{a}{p})=(\frac{a}{q})=-1*.
+Then he chooses a number $a$ with $(\frac{a}{p})=(\frac{a}{q})=-1$.
 
 Finaly, he publishes $N=pq$ and $a$ which are his **public key**.
 
 ### Encryption
 
-Alice chooses a bit $m\in\{0,1\}$ and a random $r$ with $1<r<N$.
+Alice chooses a bit $m\in\{0,1\}$ and a random $r$ with $1 < r < N$.
 
 Then she uses Bob's public key $(N, a)$ to compute $c$.
 
