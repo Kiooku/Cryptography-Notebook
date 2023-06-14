@@ -32,6 +32,8 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] [RSA](./AsymmetricCiphers/RSA/README.md)
 
+- [X] [Goldwasser–Micali Probabilistic PKC](./AsymmetricCiphers/GoldwasserMicaliProbabilisticPKC/README.md)
+
 #### Attacks
 
 ##### Oracle Attack
@@ -89,6 +91,8 @@ Learn, understand, and create project is a long process, which is why the reposi
 - [ ] A three step factorization procedure (Relation Building / Elimination / GCD Computation)
 
 - [X] Quadratic sieve
+
+- [ ] Index calculus
 
 #### Elliptic Curves
 
