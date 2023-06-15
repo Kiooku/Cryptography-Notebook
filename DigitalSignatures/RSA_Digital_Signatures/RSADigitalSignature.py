@@ -75,4 +75,4 @@ if __name__ == "__main__":
     public_key: tuple[int, int] = rsa_digital_signature.get_public_key()
     rsa_digital_signature_verification: RSA_Digital_Signature_Verificaton = RSA_Digital_Signature_Verificaton(public_key)
     is_sign: bool = rsa_digital_signature_verification.verification(S, D)
-    print(f"Is D={D} the signed document by Samatha?\n{is_sign}")
+    print(f"Is D={D} the signed document by Samantha?\n{is_sign}")

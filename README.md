@@ -48,9 +48,9 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 > **Note** Work in progress
 
-- [ ] RSA Digital Signatures
+- [X] RSA Digital Signatures
 
-- [ ] Elgamal Digital Signatures
+- [X] Elgamal Digital Signatures
 
 - [ ] Digital Signature Algorithm (DSA)
 
