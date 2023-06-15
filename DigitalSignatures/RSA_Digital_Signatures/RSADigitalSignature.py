@@ -19,11 +19,11 @@ class RSA_Digital_Signature:
         self.N = p*q
 
 
-    def get_public_key(self) -> tuple[int, int]:
-        """ Return the public key
+    def get_verification_key(self) -> tuple[int, int]:
+        """ Return the verification key
 
         Returns:
-            tuple[int, int]: public key (N, e)
+            tuple[int, int]: verification key (N, e)
         """
         return (self.N, self.e)
 
@@ -44,9 +44,9 @@ class RSA_Digital_Signature:
 
 
 class RSA_Digital_Signature_Verificaton:
-    def __init__(self, public_key: tuple[int, int]):
-        self.e = public_key[1]
-        self.N = public_key[0]
+    def __init__(self, verification_key: tuple[int, int]):
+        self.e = verification_key[1]
+        self.N = verification_key[0]
 
 
     def verification(self, S: int, D: int) -> bool:
@@ -72,7 +72,7 @@ if __name__ == "__main__":
     S: int = rsa_digital_signature.signing(D)
 
     # Victor (RSA Verification)
-    public_key: tuple[int, int] = rsa_digital_signature.get_public_key()
-    rsa_digital_signature_verification: RSA_Digital_Signature_Verificaton = RSA_Digital_Signature_Verificaton(public_key)
+    verification_key: tuple[int, int] = rsa_digital_signature.get_verification_key()
+    rsa_digital_signature_verification: RSA_Digital_Signature_Verificaton = RSA_Digital_Signature_Verificaton(verification_key)
     is_sign: bool = rsa_digital_signature_verification.verification(S, D)
     print(f"Is D={D} the signed document by Samantha?\n{is_sign}")

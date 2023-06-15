@@ -9,16 +9,24 @@ class Elgamal_Digital_Signature:
         self.A = pow(g, a, p)
 
 
-    def get_public_key(self)-> int:
-        """ Return the public key
+    def get_verification_key(self)-> int:
+        """ Return the verification key
 
         Returns:
-            int: public key
+            int: verification key
         """
         return self.A
 
 
     def signing(self, D: int)-> tuple[int, int]:
+        """ Sign the document
+
+        Args:
+            D (int): Document
+
+        Returns:
+            tuple[int, int]: Signature (S1, S2)
+        """
         new_D: int = D % self.p
         k: int = 2
         while gcd(k, self.p-1) != 1:
@@ -30,13 +38,22 @@ class Elgamal_Digital_Signature:
 
 
 class Elgamal_Digital_Signature_Verification:
-    def __init__(self, p: int, g: int, public_key: int):
+    def __init__(self, p: int, g: int, verification_key: int):
         self.p = p
         self.g = g
-        self.A = public_key
+        self.A = verification_key
 
 
     def verification(self, signature: tuple[int, int], D: int) -> bool:
+        """Check if the document 'D' is signed by the signature (S1, S2)
+
+        Args:
+            signature (tuple[int, int]): Signature
+            D (int): Document
+
+        Returns:
+            bool
+        """
         res: int = (pow(self.A, signature[0]) * pow(signature[0], signature[1])) % self.p
         return pow(self.g, D, self.p) == res
 
@@ -51,7 +68,7 @@ if __name__ == "__main__":
     signature: tuple[int, int] = elgamal_digital_signature.signing(D)
 
     # Victor
-    public_key: int = elgamal_digital_signature.get_public_key()
-    elgamal_digital_signature_verification: Elgamal_Digital_Signature_Verification = Elgamal_Digital_Signature_Verification(p, g, public_key)
+    verification_key: int = elgamal_digital_signature.get_verification_key()
+    elgamal_digital_signature_verification: Elgamal_Digital_Signature_Verification = Elgamal_Digital_Signature_Verification(p, g, verification_key)
     is_sign: bool = elgamal_digital_signature_verification.verification(signature, D)
     print(f"Is D={D} the signed document by Samantha?\n{is_sign}")
