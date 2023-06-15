@@ -45,11 +45,28 @@ class GoldwasserMicaliProbabilisticPKC:
 
 
     def decryption(self, c: int) -> int:
+        """ Decryption algorithm
+
+        Args:
+            c (int): ciphertext
+
+        Returns:
+            int: plaintext
+        """
         c_p: int = self.legendre_symbol(c , self.p)
         return 0 if c_p == 1 else 1
 
 
     def legendre_symbol(self, a: int, p: int) -> int:
+        """ Legendre symbol
+
+        Args:
+            a (int)
+            p (int)
+
+        Returns:
+            int: 1: quadratic residue, -1: quadratic nonresidue, 0: p divide a
+        """
         temp: int = pow(a, (p-1)//2, p)
         return -1 if temp == p-1 else temp
 

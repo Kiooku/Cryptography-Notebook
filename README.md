@@ -44,6 +44,16 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [ ] Diffie-Hellman MITM
 
+### Digital Signatures
+
+> **Note** Work in progress
+
+- [ ] RSA Digital Signatures
+
+- [ ] Elgamal Digital Signatures
+
+- [ ] Digital Signature Algorithm (DSA)
+
 ### Hash Functions
 
 > **Note** Basic knowledge -> Need to learn more
