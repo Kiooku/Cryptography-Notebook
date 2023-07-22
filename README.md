@@ -64,9 +64,21 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 > **Note** Basic knowledge -> Need to learn more
 
+### Message Authentification
+
+> **Note** Need to learn more
+
+- [X] HMAC
+
 ### PRNG
 
 > **Note** Need to learn
+
+### End-to-end encryption
+
+> **Note** Need to learn
+
+- [ ] Signal Double Ratchet Algorithm
 
 ### Zero-Knowledge Proofs
 
@@ -109,6 +121,8 @@ Learn, understand, and create project is a long process, which is why the reposi
 - [X] Quadratic sieve
 
 - [ ] Index calculus
+
+- [ ] Pollard's $\rho$ Method
 
 #### Elliptic Curves
 
