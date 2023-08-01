@@ -22,7 +22,7 @@
 ### Full Algorithm
 
 ```
-HMAC(Bytes M, Bytes K, Hash H)
+HMAC(Bytes M, Bytes K, Hash H) -> Hexa
     INT B = H.block_size
     Bytes ipad = "0x36" * B
     Bytes opad = "0x5c" * B
