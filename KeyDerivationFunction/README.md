@@ -8,7 +8,7 @@ As of May 2023, OWASP recommends the following KDFs for password hashing, listed
 - scrypt if Argon2id is unavailable
 - bcrypt for legacy systems
 - PBKDF2 if FIPS-140 compliance is required
-- [HKDF (HMAC-based Extract-and-Expand Key Derivation Function)](./HKDF/HKDF.md)
+- [HKDF (HMAC-based Extract-and-Expand Key Derivation Function)](./HKDF/README.md)
 
 
 ## Resources

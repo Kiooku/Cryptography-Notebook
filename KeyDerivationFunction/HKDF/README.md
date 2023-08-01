@@ -1,8 +1,8 @@
 # HKDF (HMAC-based Extract-and-Expand Key Derivation Function)
 
-> **Definition:** [Key derivation function (KDF)](../KeyDerivationFunction.md) that follows the **"extract-then-expand"** paradigm, where the KDF  logically consists of two modules.  The first stage takes the **input**  keying material and **"extracts"** from it a fixed-length pseudorandom key $\mathcal{K}$.  The second stage **"expands"** the key $\mathcal{K}$ into several additional pseudorandom keys (the output of the KDF).
+> **Definition:** [Key derivation function (KDF)](../README.md) that follows the **"extract-then-expand"** paradigm, where the KDF  logically consists of two modules.  The first stage takes the **input**  keying material and **"extracts"** from it a fixed-length pseudorandom key $\mathcal{K}$.  The second stage **"expands"** the key $\mathcal{K}$ into several additional pseudorandom keys (the output of the KDF).
 
-HKDF use [HMAC](../../MessageAuthentification/HMAC.md) and a hash function (e.g. SHA-1, SHA-256, SHA-516...).
+HKDF use [HMAC](../../MessageAuthentification/README.md) and a hash function (e.g. SHA-1, SHA-256, SHA-516...).
 
 ## Algorithm
 

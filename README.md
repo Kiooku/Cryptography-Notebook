@@ -66,11 +66,11 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### Message Authentification
 
-- [X] [HMAC](./MessageAuthentification/HMAC.md)
+- [X] [HMAC](./MessageAuthentification/README.md)
 
 ### Key Derivation Function
 
-- [X] [HKDF](./KeyDerivationFunction/HKDF/HKDF.md)
+- [X] [HKDF](./KeyDerivationFunction/HKDF/README.md)
 
 ### PRNG
 

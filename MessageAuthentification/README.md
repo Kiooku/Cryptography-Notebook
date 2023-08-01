@@ -36,5 +36,5 @@ HMAC(Bytes M, Bytes K, Hash H) -> Hexa
 ```
 
 ## Resources
-- https://www.ietf.org/rfc/rfc5869.txt
+- https://datatracker.ietf.org/doc/html/rfc2104
 - https://en.wikipedia.org/wiki/HMAC
