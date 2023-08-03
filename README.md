@@ -128,7 +128,17 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 #### Elliptic Curves
 
-> **Note** Need to learn more
+> **Note** Work in progress
+
+- [X] Addition
+- [X] Double-and-Add Algorithm
+- [ ] Elliptic Diffie-Hellman Key Exchange
+- [ ] Elliptic Elgamal Public Key Cryptosystem
+- [ ] Elliptic Curve Signatures
+- [ ] Lenstra's Elliptic Curve Factorization Algorithm
+- [ ] Weil Pairing
+- Tripartite Diffie-Hellman Key Exchange
+- [ ] ID-Based Public Key Cryptosystems
 
 #### Lattices
 
