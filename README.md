@@ -34,6 +34,12 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] [Goldwasser–Micali Probabilistic PKC](./AsymmetricCiphers/GoldwasserMicaliProbabilisticPKC/README.md)
 
+- [X] [Elliptic Diffie-Hellman Key Exchange](./AsymmetricCiphers/Elliptic_Diffie_Hellman/README.md)
+
+- [ ] Elliptic Elgamal Public Key Cryptosystem
+
+- [ ] Tripartite Diffie-Hellman Key Exchange
+
 #### Attacks
 
 ##### Oracle Attack
@@ -132,12 +138,8 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Addition
 - [X] Double-and-Add Algorithm
-- [ ] Elliptic Diffie-Hellman Key Exchange
-- [ ] Elliptic Elgamal Public Key Cryptosystem
-- [ ] Elliptic Curve Signatures
 - [ ] Lenstra's Elliptic Curve Factorization Algorithm
 - [ ] Weil Pairing
-- Tripartite Diffie-Hellman Key Exchange
 - [ ] ID-Based Public Key Cryptosystems
 
 #### Lattices

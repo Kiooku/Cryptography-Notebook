@@ -19,7 +19,7 @@ and an integer $g$ having large prime order in $\mathbb{F}^∗_p$ .
 
 |                        Alice                        |                         Bob                         |
 |:---------------------------------------------------:|:---------------------------------------------------:|
-| Choose a secret integer $a$. <br/> Compute $A \equiv g^a \text{(mod }p\text{)}$. | Choose a secret integer $b$. <br/> Compute $B \equiv g^b \text{(mod }p\text{)}$. |
+| Chooses a secret integer $a$. <br/> Computes $A \equiv g^a \text{(mod }p\text{)}$. | Chooses a secret integer $b$. <br/> Computes $B \equiv g^b \text{(mod }p\text{)}$. |
 
 Alice's **private key** is $a$ and her **public key** is $A$.
 
@@ -35,7 +35,7 @@ Bob sends $B$ to Alice.
 
 |              Alice              |               Bob              |
 |:-------------------------------:|:------------------------------:|
-| Compute the number $B^a \text{ (mod }p\text{)}$. | Compute the number $A^b \text{ (mod }p\text{)}$. |
+| Computes the number $B^a \text{ (mod }p\text{)}$. | Computes the number $A^b \text{ (mod }p\text{)}$. |
 
 The **shared secret** value is $B^a \equiv (g^b)^a \equiv g^{ab} \equiv (g^a)^b \equiv A^b \text{ (mod }p\text{)}.$
 
