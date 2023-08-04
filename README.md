@@ -36,7 +36,9 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] [Elliptic Diffie-Hellman Key Exchange](./AsymmetricCiphers/Elliptic_Diffie_Hellman/README.md)
 
-- [ ] Elliptic Elgamal Public Key Cryptosystem
+- [X] [Elliptic Elgamal Public Key Cryptosystem](./AsymmetricCiphers/EllipticElgamalPKC/README.md)
+
+- [ ] Menezes-Vanstone variant of the Elliptic Elgamal PKC
 
 - [ ] Tripartite Diffie-Hellman Key Exchange
 

@@ -21,10 +21,27 @@ class EllipticCurves:
 
 
     def minus(self, P: Point) -> Point:
+        """ Return the minus of the point
+
+        Args:
+            P (Point): point
+
+        Returns:
+            Point: minus of the point 'P'
+        """
         return Point(P.get_x(), -P.get_y())
 
 
     def addition(self, P1: Point, P2: Point) -> Point:
+        """ Return the addition of two point
+
+        Args:
+            P1 (Point): first point
+            P2 (Point): second point
+
+        Returns:
+            Point: result
+        """
         if P1 == self.O:
             return P2
         elif P2 == self.O:
@@ -43,7 +60,20 @@ class EllipticCurves:
 
         return Point(x3, y3)
 
+
     def double_and_add(self, P: Point, n: int) -> Point:
+        """ Double-And-Add algorithm
+
+        Args:
+            P (Point): point
+            n (int): coefficient
+
+        Raises:
+            Exception: 'n' sould be greater or equal to 1
+
+        Returns:
+            Point: result
+        """
         if n < 1:
             raise Exception("'n' sould be greater or equal to 1")
 

@@ -16,7 +16,7 @@ A trusted party chooses and publishes a large prime $p$ and an element $g$ modul
 
 Alice choose a private key ($1\le a \le p-1$).
 
-Then she compute $A = g^a\text{ (mod }p\text{)}$ and publish the **public key** $A$.
+Then she computes $A = g^a\text{ (mod }p\text{)}$ and publish the **public key** $A$.
 
 ### Encryption
 

@@ -5,6 +5,8 @@ from Mathematics.EllipticCurves.elliptic_curves import EllipticCurves
 # export PYTHONPATH="${PYTHONPATH}:/path/to/project_root/"
 
 class EllipticDiffieHellmanKeyExchange:
+    """ Elliptic Diffie Hellman Key Exchange
+    """
     def __init__(self, E: EllipticCurves, P: Point, n: int) -> None:
         self.E: EllipticCurves = E
         self.P: Point = P
@@ -13,6 +15,11 @@ class EllipticDiffieHellmanKeyExchange:
 
 
     def get_public_key(self) -> Point:
+        """ Return the public key
+
+        Returns:
+            Point: public key
+        """
         if self.Q == self.E.O:
             self.Q = self.E.double_and_add(self.P, self.n)
 
@@ -20,10 +27,26 @@ class EllipticDiffieHellmanKeyExchange:
 
 
     def get_shared_secret_point(self, Q_prime: Point) -> Point:
+        """ Return the shared secret point
+
+        Args:
+            Q_prime (Point): public key
+
+        Returns:
+            Point: shared secret
+        """
         return self.E.double_and_add(Q_prime, self.n)
 
 
     def get_shared_secret(self, x: int) -> int:
+        """ Return the shared secret
+
+        Args:
+            x (int): x value of the public key
+
+        Returns:
+            int: shared secret
+        """
         y_square: int = (pow(x, 3) + self.E.A * x + self.E.B) % self.E.F
         y: int = pow(y_square, (self.E.F + 1) // 4, self.E.F)
         return self.get_shared_secret_point(Point(x, y)).get_x()
