@@ -55,8 +55,8 @@ class DSA_verification:
             bool
         """
         V1: int = (D * pow(signature[1], -1, self.q)) % self.q
-        V2: int = (signature[0] * pow(signature[1], -1, self.q)) % q
-        return ((pow(self.g, V1, self.p) * pow(self.A, V2, self.p)) % self.q) == signature[0]
+        V2: int = (signature[0] * pow(signature[1], -1, self.q)) % self.q
+        return (((pow(self.g, V1) * pow(self.A, V2)) % self.p) % self.q) == signature[0]
 
 
 if __name__ == "__main__":
