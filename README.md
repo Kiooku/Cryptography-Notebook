@@ -62,7 +62,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Digital Signature Algorithm (DSA)
 
-- [ ] Elliptic Curve Digital Signature Algorithm (ECDSA)
+- [X] Elliptic Curve Digital Signature Algorithm (ECDSA)
 
 - [ ] GGH Digital Signature Scheme
 

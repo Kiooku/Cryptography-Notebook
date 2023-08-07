@@ -29,7 +29,7 @@ class EllipticCurves:
         Returns:
             Point: minus of the point 'P'
         """
-        return Point(P.get_x(), -P.get_y())
+        return Point(P.x, -P.y)
 
 
     def addition(self, P1: Point, P2: Point) -> Point:
@@ -51,12 +51,12 @@ class EllipticCurves:
 
         l: int = 0
         if P1 != P2:
-            l = ((P2.get_y() - P1.get_y()) * mod_inverse(P2.get_x() - P1.get_x(), self.F)) % self.F
+            l = ((P2.y - P1.y) * mod_inverse(P2.x - P1.x, self.F)) % self.F
         else:
-            l = ((3*pow(P1.get_x(), 2) + self.A) * mod_inverse(2*P1.get_y(), self.F)) % self.F
+            l = ((3*pow(P1.x, 2) + self.A) * mod_inverse(2*P1.y, self.F)) % self.F
 
-        x3: int = (pow(l, 2) - P1.get_x() - P2.get_x()) % self.F
-        y3: int = (l * (P1.get_x() - x3) - P1.get_y()) % self.F
+        x3: int = (pow(l, 2) - P1.x - P2.x) % self.F
+        y3: int = (l * (P1.x - x3) - P1.y) % self.F
 
         return Point(x3, y3)
 
@@ -75,7 +75,10 @@ class EllipticCurves:
             Point: result
         """
         if n < 1:
-            raise Exception("'n' sould be greater or equal to 1")
+            raise Exception("'n' should be greater or equal to 1")
+
+        if not self.belongs_to(P):
+            raise Exception("'P' should belongs to the elliptic curve E")
 
         Q: Point = P
         R: Point = self.O
@@ -88,6 +91,26 @@ class EllipticCurves:
             n = floor(n/2)
 
         return R
+
+
+    def belongs_to(self, P: Point) -> bool:
+        """ Define if the point is on the elliptic curve
+
+        Args:
+            P (Point): point
+
+        Returns:
+            bool: True -> belong; False -> doesn't belong
+        """
+        return pow(P.y, 2, self.F) == (pow(P.x, 3, self.F) + self.A * P.x + self.B) % self.F
+
+
+    def __str__(self) -> str:
+        if self.A != 0 and self.B != 0:
+            return f"(E_{self.F}): Y² = X³ + {self.A}X + {self.B}"
+        elif self.A == 0:
+            return f"(E_{self.F}): Y² = X³ + {self.B}"
+        return f"(E_{self.F}): Y² = X³ + {self.A}X"
 
 
 if __name__ == "__main__":
@@ -108,3 +131,5 @@ if __name__ == "__main__":
     expected_res: Point = Point(3492, 60)
     res2: Point = E2.double_and_add(P, n)
     print(res2, res2 == expected_res)
+
+    print(E2)

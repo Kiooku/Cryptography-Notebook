@@ -49,7 +49,7 @@ class EllipticDiffieHellmanKeyExchange:
         """
         y_square: int = (pow(x, 3) + self.E.A * x + self.E.B) % self.E.F
         y: int = pow(y_square, (self.E.F + 1) // 4, self.E.F)
-        return self.get_shared_secret_point(Point(x, y)).get_x()
+        return self.get_shared_secret_point(Point(x, y)).x
 
 
 if __name__ == "__main__":
@@ -82,11 +82,11 @@ if __name__ == "__main__":
     # Alice
     nA2: int = 2489
     alice_elliptic_diffie_hellman2: EllipticDiffieHellmanKeyExchange = EllipticDiffieHellmanKeyExchange(E, P, nA2)
-    alice_public_key2: int = alice_elliptic_diffie_hellman2.get_public_key().get_x()
+    alice_public_key2: int = alice_elliptic_diffie_hellman2.get_public_key().x
     # Bob
     nB2: int = 2286
     bob_elliptic_diffie_hellman2: EllipticDiffieHellmanKeyExchange = EllipticDiffieHellmanKeyExchange(E, P, nB2)
-    bob_public_key2: int = bob_elliptic_diffie_hellman2.get_public_key().get_x()
+    bob_public_key2: int = bob_elliptic_diffie_hellman2.get_public_key().x
 
     # Shared secret
     alice_shared_secret2: int = alice_elliptic_diffie_hellman2.get_shared_secret(bob_public_key2)

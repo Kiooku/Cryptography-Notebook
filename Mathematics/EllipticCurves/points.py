@@ -5,25 +5,6 @@ class Point:
         self.x: int = x
         self.y: int = y
 
-
-    def get_x(self) -> int:
-        """Getter for the 'x' value of the point
-
-        Returns:
-            int: 'x' value
-        """
-        return self.x
-
-
-    def get_y(self) -> int:
-        """Getter for the 'y' value of the point
-
-        Returns:
-            int: 'y' value
-        """
-        return self.y
-
-
     def __str__(self) -> str:
         return f"({self.x}, {self.y})"
 
