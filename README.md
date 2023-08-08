@@ -140,7 +140,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Addition
 - [X] Double-and-Add Algorithm
-- [ ] Lenstra's Elliptic Curve Factorization Algorithm
+- [X] Lenstra's Elliptic Curve Factorization Algorithm
 - [ ] Weil Pairing
 - [ ] ID-Based Public Key Cryptosystems
 

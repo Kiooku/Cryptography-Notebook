@@ -1,9 +1,6 @@
 from random import randint
 from hashlib import sha256
 
-# If you getting ModuleNotFoundError do the following command:
-# export PYTHONPATH="${PYTHONPATH}:/path/to/project_root/"
-
 class ECDSA:
     def __init__(self, E, G, q: int) -> None:
         self.E = E
