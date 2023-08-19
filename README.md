@@ -86,7 +86,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### End-to-end encryption
 
-> **Note** Need to learn
+> **Note** Need to learn more
 
 - [ ] Signal Double Ratchet Algorithm
 
@@ -141,6 +141,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 - [X] Addition
 - [X] Double-and-Add Algorithm
 - [X] Lenstra's Elliptic Curve Factorization Algorithm
+- [ ] Miller algorithm
 - [ ] Weil Pairing
 - [ ] ID-Based Public Key Cryptosystems
 
