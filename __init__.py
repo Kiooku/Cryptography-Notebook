@@ -4,3 +4,4 @@ from Mathematics.AlgorithmAndTheorem.babystepGiantstepAlgorithm import babystep_
 from Mathematics.AlgorithmAndTheorem.chineseRemainderTheorem import chinese_remainder_theorem
 from MessageAuthentification.HMAC import hmac
 from Mathematics.EllipticCurves.points import Point
+from Mathematics.EllipticCurves.miller_algorithm import miller_algorithm

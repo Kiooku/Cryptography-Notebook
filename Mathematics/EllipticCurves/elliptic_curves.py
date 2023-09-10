@@ -1,4 +1,5 @@
 from math import floor
+from typing import Union
 from sympy import mod_inverse
 from Mathematics.EllipticCurves.points import Point
 
@@ -103,6 +104,43 @@ class EllipticCurves:
             bool: True -> belong; False -> doesn't belong
         """
         return pow(P.y, 2, self.F) == (pow(P.x, 3, self.F) + self.A * P.x + self.B) % self.F
+
+
+    def slope(self, P1: Point, P2: Point) -> Union[int, None]:
+        """ Give the slope between two points
+
+        Args:
+            P1 (Point): first point
+            P2 (Point): second point
+
+        Returns:
+            Union[int, None]: slope
+        """
+        if P1 == self.minus(P2):
+            return None
+        elif P1 == P2:
+            return ((3*pow(P1.x, 2) + self.A) * mod_inverse(2*P1.y, self.F)) % self.F
+
+        return ((P2.y - P1.y) * mod_inverse(P2.x - P1.x, self.F)) % self.F
+
+
+    def order(self, P: Point) -> int:
+        """ Give the order of a point
+
+        Args:
+            P (Point): point
+
+        Returns:
+            int: order
+        """
+        n: int = 2
+        try:
+            while self.double_and_add(P, n) != self.O:
+                n += 1
+        except ValueError:
+            pass
+
+        return n
 
 
     def __str__(self) -> str:
