@@ -44,13 +44,18 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 #### Attacks
 
-- [X] [Small Subgroup Confinement Attack *(Diffie-Hellman)*](./Attacks/README.md#small-subgroup-confinement-attack-diffie-hellman)
-- [X] [Blinding Attack on RSA Digital Signature](./Attacks/RSA/BlindingAttackonRSADigitalSignature.md)
-- [X] [Bleinchenbacher's attack (PKCS 1 v1.5)](./Attacks/RSA/BleinchenbacherAttack(PKCS%201v1.5).md)
+##### Diffie-Hellman
 
-##### Oracle Attack
+- [X] [Small Subgroup Confinement Attack *(Diffie-Hellman)*](./Attacks/README.md#small-subgroup-confinement-attack-diffie-hellman)
+
+##### ElGamal
 
 - [X] [ElGamal with a Diffie-Hellman Oracle](./AsymmetricCiphers/ElGamal/README.md#attacks-using-oracle)
+
+##### RSA
+
+- [X] [Blinding Attack on RSA Digital Signature](./Attacks/RSA/BlindingAttackonRSADigitalSignature.md)
+- [X] [Bleinchenbacher's attack (PKCS 1 v1.5)](./Attacks/RSA/BleinchenbacherAttack(PKCS%201v1.5).md)
 
 #### Man-in-the-Middle Attack *(MITM)*
 
