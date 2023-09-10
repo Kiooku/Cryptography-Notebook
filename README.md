@@ -44,6 +44,10 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 #### Attacks
 
+- [X] [Small Subgroup Confinement Attack *(Diffie-Hellman)*](./Attacks/README.md#small-subgroup-confinement-attack-diffie-hellman)
+- [X] [Blinding Attack on RSA Digital Signature](./Attacks/RSA/BlindingAttackonRSADigitalSignature.md)
+- [X] [Bleinchenbacher's attack (PKCS 1 v1.5)](./Attacks/RSA/BleinchenbacherAttack(PKCS%201v1.5).md)
+
 ##### Oracle Attack
 
 - [X] [ElGamal with a Diffie-Hellman Oracle](./AsymmetricCiphers/ElGamal/README.md#attacks-using-oracle)
@@ -141,8 +145,8 @@ Learn, understand, and create project is a long process, which is why the reposi
 - [X] Addition
 - [X] Double-and-Add Algorithm
 - [X] Lenstra's Elliptic Curve Factorization Algorithm
-- [ ] Miller algorithm
-- [ ] Weil Pairing
+- [X] Miller algorithm
+- [X] Weil Pairing
 - [ ] ID-Based Public Key Cryptosystems
 
 #### Lattices
