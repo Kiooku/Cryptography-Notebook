@@ -1,5 +1,7 @@
 # Definitions of cryptographic attacks
 
+> **Warning** There will only be descriptions of attacks against cryptosystems. The implementation will not be included in order to respect the spirit of CTF.
+
 ## Chosen ciphertext attack
 
 > **Note** Some examples will follow later
