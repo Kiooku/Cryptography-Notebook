@@ -2,6 +2,8 @@ from sympy import isprime
 from os import linesep
 
 class DiffieHellman:
+    """ Diffie Hellman Key Exchange
+    """
     def __init__(self, p: int, g: int):
         if not isprime(p):
             raise Exception("'p' need to be a prime number")

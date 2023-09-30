@@ -40,7 +40,9 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [ ] Menezes-Vanstone variant of the Elliptic Elgamal PKC
 
-- [ ] Tripartite Diffie-Hellman Key Exchange
+- [X] Tripartite Diffie-Hellman Key Exchange
+
+- [ ] ID-Based Public Key Cryptosystems
 
 #### Attacks
 
@@ -152,7 +154,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 - [X] Lenstra's Elliptic Curve Factorization Algorithm
 - [X] Miller algorithm
 - [X] Weil Pairing
-- [ ] ID-Based Public Key Cryptosystems
+- [ ] MOV algorithm
 
 #### Lattices
 

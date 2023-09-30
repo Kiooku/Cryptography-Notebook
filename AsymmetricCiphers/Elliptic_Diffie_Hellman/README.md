@@ -1,8 +1,8 @@
 # Elliptic Diffie-Hellman Key Exchange
 
-Elliptic Diffie-Hellman Key Exchange is a Diffie-Hellman key exchange base on elliptic curve over a finite field.
+Elliptic Diffie-Hellman Key Exchange is a Diffie-Hellman key exchange based on elliptic curve over a finite field.
 
-> **Note** The security is based on the **Elliptic Curve Discrete Logarithms Problem** (ECDLP) and **Elliptic Curve Diffie-Hellman Problem**
+> **Note** The security is based on the **Elliptic Curve Discrete Logarithm Problem** (ECDLP) and **Elliptic Curve Diffie-Hellman Problem**
 
 ### Prerequisite
 - Basic knowledge of elliptic curves
