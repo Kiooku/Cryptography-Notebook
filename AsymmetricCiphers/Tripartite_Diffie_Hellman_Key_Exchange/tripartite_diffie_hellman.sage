@@ -61,6 +61,8 @@ if __name__ == "__main__":
     assert i^2 == -1
     E = EllipticCurve(Fp2, [1, 0])
     P = E.random_point() #E(334, 920)
+    while not P.order().is_prime():
+        P = E.random_point()
 
     tripartite_diffie_hellman: TripartiteDiffieHellman = TripartiteDiffieHellman(E, P)
 
