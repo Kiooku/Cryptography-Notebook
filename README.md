@@ -176,7 +176,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Hadamard ratio
 
-- [ ] Babai's closest vertext algorithm
+- [X] Babai's closest vertex algorithm
 
 - [ ] Babai's closest plane algorithm
 
