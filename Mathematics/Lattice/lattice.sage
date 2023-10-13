@@ -3,19 +3,21 @@ class Lattice:
         self.basis = basis
 
 
-    def hadamard_ratio(self, v1: vector, v2: vector) -> float:
+    def hadamard_ratio(self, *args: vector) -> float:
         """ Compute the Hadamard ratio
         
         The closer that the value is to 1, the more orthogonal are the vectors in the basis.
         
         Args:
-            v1 (vector): first vector
-            v2 (vector): second vector
+            args (vector): vectors for the hadamard_ratio
 
         Output:
             hadamard_ratio (float): Hadamard ratio
         """
-        return pow(abs(self.basis.det()) / (v1.norm() * v2.norm()), 1/2)
+        temp: float = 1
+        for arg in args:
+            temp *= arg.norm()
+        return pow(abs(self.basis.det()) / (temp), 1/len(args))
 
 
     
@@ -34,6 +36,10 @@ class Lattice:
             v += round(t_i[i]) * self.basis[i]
 
         return v
+
+    
+    def __str__(self) -> str:
+        return str(self.basis)
 
 
 if __name__ == "__main__":
