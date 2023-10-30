@@ -5,13 +5,17 @@ in a lattice.
 
 ## Prerequisite
 
-**Ternary** *(or **trinary***) **polynomials**: $$
-  \mathcal{T}(d_1, d_2)=
-    \begin{cases}
-       & a(x) \text{ has $d_1$ coefficients equal to $1$,}\\
-      a(x)\in R: & a(x) \text{ has $d_2$ coefficients equal to $-1$}\\
-       & a(x) \text{ has all other coefficients equal to $0$}
-    \end{cases}$$ 
+**Ternary** *(or **trinary***) **polynomials**:
+
+$$
+\mathcal{T}(d_1, d_2) =
+\begin{cases}
+& a(x) \text{ has $d_1$ coefficients equal to $1$,} \\
+a(x) \in R: & a(x) \text{ has $d_2$ coefficients equal to $-1$} \\
+& a(x) \text{ has all other coefficients equal to $0$}
+\end{cases}
+$$
+
 
 
 
@@ -22,7 +26,7 @@ in a lattice.
 ### Public parameter creation (Chosen by a trusted party)
 
 Three **convolution polynomial rings**:
-$$R = \frac{\Z[x]}{(x^N - 1)}\qquad R_p = \frac{(\Z/p\Z)[x]}{(x^N - 1)}\qquad R_q = \frac{(\Z/q\Z[x])}{(x^N - 1)}$$
+$$R = \frac{\mathbb{Z}[x]}{(x^N - 1)}\qquad R_p = \frac{(\mathbb{Z}/p\mathbb{Z})[x]}{(x^N - 1)}\qquad R_q = \frac{(\mathbb{Z}/q\mathbb{Z}[x])}{(x^N - 1)}$$
 
 $N$ and $p$: **prime numbers**.
 
