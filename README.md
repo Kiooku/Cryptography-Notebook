@@ -46,6 +46,8 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] [GGH cryptosystem](./AsymmetricCiphers/GGH_cryptosystem/README.md)
 
+- [X] [NTRUEncrypt cryptosystem](./AsymmetricCiphers//NTRUEncrypt/README.md)
+
 #### Attacks
 
 ##### Diffie-Hellman
@@ -100,6 +102,14 @@ Learn, understand, and create project is a long process, which is why the reposi
 ### PRNG
 
 > **Note** Need to learn
+
+- [ ] ANSI X9.17 PRNG
+
+- [ ] DSA PRNG
+
+- [ ] RSAREF PRNG
+
+- [ ] fsrRand
 
 ### End-to-end encryption
 
@@ -165,8 +175,6 @@ Learn, understand, and create project is a long process, which is why the reposi
 #### Lattices
 
 > **Note** Work in progress
-
-> **Note** The [lattice folder](./Mathematics/Lattice/) is the start of another project. The code tries to follow good code practices.
 
 > **Warning** I'm still learning by myself Lattice, so I may have made a few mistakes
 
