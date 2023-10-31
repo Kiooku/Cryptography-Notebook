@@ -83,7 +83,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Elliptic Curve Digital Signature Algorithm (ECDSA)
 
-- [ ] GGH Digital Signature Scheme
+- [X] [GGH Digital Signature Scheme](./DigitalSignatures/GGH_Digital_Signature/README.md)
 
 - [ ] NTRU Modular Lattice Signature Scheme (NTRUMLS)
 

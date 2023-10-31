@@ -16,9 +16,6 @@ a(x) \in R: & a(x) \text{ has $d_2$ coefficients equal to $-1$} \\
 \end{cases}
 $$
 
-
-
-
 ## Algorithm
 
 > **Note** Bob wants to send a message to Alice using NTRUEncrypt cryptosystem.
