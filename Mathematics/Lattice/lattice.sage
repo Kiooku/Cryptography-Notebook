@@ -2,6 +2,18 @@ class Lattice:
     def __init__(self, basis: Matrix):
         self.basis = basis
 
+    
+    def det(self) -> int:
+        """ Determinant of the lattice
+
+        Output:
+            (int): determinant
+        """
+        if self.basis.is_square():
+            return abs(self.basis.determinant())
+        
+        return sqrt(abs(self.basis.transpose() * self.basis))
+
 
     def gram_schmidt_algorithm(self) -> Matrix:
         """ Gram Schmidt Algorithm
@@ -86,6 +98,13 @@ class Lattice:
             v2 = v2 - m * v1
 
     
+    def LLL(self) -> Matrix:
+        """
+        """
+        pass
+
+
+    
     def __str__(self) -> str:
         return str(self.basis)
 
@@ -110,8 +129,19 @@ if __name__ == "__main__":
     svp_solution: vector = l2.gaussian_lattice_reduction()[0]
     print(f"A shortest vector for L2: {svp_solution}")
 
-    # Gram Schmidt Algorithm
+    # Gram-Schmidt Algorithm
     print(float(l2.hadamard_ratio(l2.basis[0], l2.basis[1])))
     l2_orthogonal_basis = l2.gram_schmidt_algorithm()
     print(l2_orthogonal_basis)
     print(float(Lattice(l2_orthogonal_basis).hadamard_ratio(l2_orthogonal_basis[0], l2_orthogonal_basis[1])))
+
+    # LLL
+
+    r: Matrix = Matrix([[7,-12,-8,4,19,9],
+                    [-20,4,-9,16,13,16],
+                    [5,2,33,0,15,-9],
+                    [-6,-7,-20,-21,8,-12],
+                    [-10,-24,21,-15,-6,-11],
+                    [7,4,-9,-11,1,31]])
+    
+    print(r.determinant())
