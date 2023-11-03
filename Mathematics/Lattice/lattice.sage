@@ -14,23 +14,40 @@ class Lattice:
         
         return sqrt(abs(self.basis.transpose() * self.basis))
 
+    
+    def mu(self, i: int, j: int, b_i: Matrix, b_j: Matrix) -> float:
+        """ (v_i * v_j) / ||v_j||²
 
-    def gram_schmidt_algorithm(self) -> Matrix:
+        Input:
+            i (int)
+            j (int)
+            b_i (Matrix): first basis
+            b_j (Matrix): second basis
+
+        Output:
+            (float)
+        """
+        return (b_i[i] * b_j[j]) / pow(b_j[j].norm(), 2)
+
+
+    def gram_schmidt_algorithm(self, b: Matrix) -> Matrix:
         """ Gram Schmidt Algorithm
 
         Create an orthogonal_basis
 
+        Input:
+            b (Matrix): basis
+
         Output:
             (Matrix): Orthogonal basis
         """
-        orthogonal_basis: list = [self.basis[0]]
-        for i in range(1, len(self.basis.rows())):
-            v_i: vector = self.basis[i]
+        orthogonal_basis: list = [b[0]]
+        for i in range(1, len(b.rows())):
+            v_i: vector = b[i]
             v_ip = v_i
             for j in range(i):
                 v_j: vector = orthogonal_basis[j]
-                u_ij = (v_i * v_j) / pow(v_j.norm(), 2)
-                v_ip -= u_ij * v_j
+                v_ip -= self.mu(i, j, b, Matrix(orthogonal_basis)) * v_j
             
             orthogonal_basis.append(v_ip)
         
@@ -99,10 +116,29 @@ class Lattice:
 
     
     def LLL(self) -> Matrix:
-        """
-        """
-        pass
+        """ LLL latice reduction algorithm
 
+        Output:
+            (Matrix): LLL reduced basis
+        """
+        k: int = 1
+        n: int = len(self.basis.rows())
+        b: Matrix = copy(self.basis) # Copy to don't modify the latice basis
+        while k < n:
+            orthogonal_basis: Matrix = self.gram_schmidt_algorithm(b)
+            for j in range(k-1, -1, -1):
+                # Size reduction
+                b[k] = b[k] - round(self.mu(k, j, b, orthogonal_basis)) * b[j]
+            
+            # Lovász Condition
+            if pow(orthogonal_basis[k].norm(), 2) >= (3/4 - pow(self.mu(k, k-1, b, orthogonal_basis), 2)) * pow(orthogonal_basis[k-1].norm(), 2):
+                k += 1
+            else:
+                # Swap Step
+                b[k], b[k-1] = b[k-1], b[k]
+                k = max(k-1, 1)
+
+        return b
 
     
     def __str__(self) -> str:
@@ -124,24 +160,36 @@ if __name__ == "__main__":
 
     print(f"Hadamard ratio: {round(l.hadamard_ratio(v1, v2), 3)}")
 
-    # Gaussian Lattice Reduction
+    # Gaussian Lattice Reduction [Example 7.67]
     l2: Lattice = Lattice(Matrix([vector([66586820, 65354729]), vector([6513996, 6393464])]))
     svp_solution: vector = l2.gaussian_lattice_reduction()[0]
     print(f"A shortest vector for L2: {svp_solution}")
 
     # Gram-Schmidt Algorithm
     print(float(l2.hadamard_ratio(l2.basis[0], l2.basis[1])))
-    l2_orthogonal_basis = l2.gram_schmidt_algorithm()
+    l2_orthogonal_basis = l2.gram_schmidt_algorithm(l2.basis)
     print(l2_orthogonal_basis)
     print(float(Lattice(l2_orthogonal_basis).hadamard_ratio(l2_orthogonal_basis[0], l2_orthogonal_basis[1])))
 
-    # LLL
+    # LLL [Example 7.75]
+    M: Matrix = Matrix([[19,2,32,46,3,33],
+                    [15,42,11,0,3,24],
+                    [43,15,0,24,4,16],
+                    [20,44,44,0,18,15],
+                    [0,48,35,16,31,31],
+                    [48,33,32,9,1,29]])
 
-    r: Matrix = Matrix([[7,-12,-8,4,19,9],
+    M_LLL: Matrix = Matrix([[7,-12,-8,4,19,9],
                     [-20,4,-9,16,13,16],
                     [5,2,33,0,15,-9],
                     [-6,-7,-20,-21,8,-12],
                     [-10,-24,21,-15,-6,-11],
                     [7,4,-9,-11,1,31]])
-    
-    print(r.determinant())
+
+    print(M_LLL.determinant(), M.determinant())
+
+    l3 = Lattice(M)
+    res_LLL: Matrix = l3.LLL()
+    print(res_LLL)
+    print(f"LLL give the expected basis: {res_LLL == M_LLL}")
+    print(f"The lattice basis has not been modified: {l3.basis == M}")

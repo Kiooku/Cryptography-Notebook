@@ -180,7 +180,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Create a Lattice class
 
-- [ ] Create a Knapsack class
+- [X] Create a Knapsack class
 
 - [X] Gram-Schmidt Algorithm
 
@@ -192,7 +192,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Gaussian Lattice reduction
 
-- [ ] LLL algorithm
+- [X] LLL algorithm
 
 - [ ] BKZ-LLL algorithm
 
