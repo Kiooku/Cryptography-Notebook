@@ -4,9 +4,7 @@
 
 It's a repository with some of the cryptographic implementations I have done for learning purposes.
 
-## Why the repository is almost empty ?
-
-I'm learning cryptography by myself, until then by solving cryptography challenges on [CryptoHack](https://cryptohack.org/user/Kioku/) and Root-Me.
+Until then by solving cryptography challenges on [CryptoHack](https://cryptohack.org/user/Kioku/) and Root-Me.
 
 Currently, I'm reading "An Introduction to Mathematical Cryptography" (Second edition), and in order to apply the mathematical knowledge and get a better understanding, I decided to create this repository.
 
@@ -174,10 +172,6 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 #### Lattices
 
-> **Note** Work in progress
-
-> **Warning** I'm still learning by myself Lattice, so I may have made a few mistakes
-
 - [X] Create a Lattice class
 
 - [X] Create a Knapsack class
@@ -188,13 +182,11 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Babai's closest vertex algorithm
 
-- [ ] Babai's closest plane algorithm
+- [X] Babai's closest plane algorithm
 
 - [X] Gaussian Lattice reduction
 
 - [X] LLL algorithm
-
-- [ ] BKZ-LLL algorithm
 
 ### Learning with errors (LWE)
 

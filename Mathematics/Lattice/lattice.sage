@@ -74,7 +74,8 @@ class Lattice:
 
     
     def babai_algorithm(self, w: vector) -> vector:
-        """ Solve the CVP if the basis is sufficiently orthogonal
+        """ Solve the apprCVP if the basis is sufficiently orthogonal
+        Babai's closest vertext algorithm
 
         Args:
             w (vector)
@@ -88,6 +89,23 @@ class Lattice:
             v += round(t_i[i]) * self.basis[i]
 
         return v
+
+    
+    def babai_closest_plane_algorithm(self, t: vector) -> vector:
+        """ Solve the apprCVP with normaly better result than the Babai's closest vertext algorithm
+
+        Args:
+            t (vector)
+
+        Output:
+            (vector): vector in the lattice that is close to 't'
+        """
+        v_star: Matrix = self.gram_schmidt_algorithm(self.basis)
+        w: vector = t
+        for i in range(len(t)-1, -1, -1):
+            w -= round((w * v_star[i]) / pow(v_star[i].norm(), 2)) * self.basis[i]
+        
+        return t - w
 
 
     def gaussian_lattice_reduction(self) -> Matrix:
@@ -159,6 +177,9 @@ if __name__ == "__main__":
     print(f"Close vector to w: {round((v - w).norm(), 2)}")
 
     print(f"Hadamard ratio: {round(l.hadamard_ratio(v1, v2), 3)}")
+
+    v2: vector= l.babai_closest_plane_algorithm(w)
+    print(f"Babai's closest plane algorithm result: {round((v2 - w).norm(), 2)}")
 
     # Gaussian Lattice Reduction [Example 7.67]
     l2: Lattice = Lattice(Matrix([vector([66586820, 65354729]), vector([6513996, 6393464])]))
