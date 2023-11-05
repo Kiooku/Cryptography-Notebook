@@ -161,14 +161,12 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 #### Elliptic Curves
 
-> **Note** Work in progress
-
 - [X] Addition
 - [X] Double-and-Add Algorithm
 - [X] Lenstra's Elliptic Curve Factorization Algorithm
 - [X] Miller algorithm
 - [X] Weil Pairing
-- [ ] MOV algorithm
+- [X] MOV algorithm
 
 #### Lattices
 
