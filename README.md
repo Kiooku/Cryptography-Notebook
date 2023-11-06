@@ -69,6 +69,14 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [ ] The Boneh Franklin Id Based PKC
 
+### Identiﬁcation Schemes
+
+- [ ] Feige–Fiat–Shamir identification scheme
+
+- [ ] The Pedersen commitment scheme
+
+- [ ] Schnorr's sigma protocol
+
 ### Digital Signatures
 
 > **Note** Work in progress
@@ -96,6 +104,12 @@ Learn, understand, and create project is a long process, which is why the reposi
 ### Key Derivation Function
 
 - [X] [HKDF](./KeyDerivationFunction/HKDF/README.md)
+
+### Secret Sharing Schemes
+
+- [ ] Shamir's secret sharing
+
+- [ ] Blakley's scheme
 
 ### PRNG
 

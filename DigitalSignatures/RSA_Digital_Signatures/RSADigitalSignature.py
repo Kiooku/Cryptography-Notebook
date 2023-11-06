@@ -1,4 +1,5 @@
 from sympy import isprime, gcd
+from random import randint
 
 class RSA_Digital_Signature:
     def __init__(self, p: int, q: int, e: int):
@@ -76,3 +77,18 @@ if __name__ == "__main__":
     rsa_digital_signature_verification: RSA_Digital_Signature_Verificaton = RSA_Digital_Signature_Verificaton(verification_key)
     is_sign: bool = rsa_digital_signature_verification.verification(S, D)
     print(f"Is D={D} the signed document by Samantha?\n{is_sign}")
+
+    # Blind digital signature
+    # Keep the same parameter
+    N, e = rsa_digital_signature.get_verification_key()
+    R: int = randint(2, N)
+    # D' ≡ R^e * D (mod N)
+    D_prime: int = (pow(R, e) * D) % N
+
+    # Sign the modify document
+    blind_signature: int = rsa_digital_signature.signing(D_prime)
+    # Only Victor know the document, Samantha signed a tampered one
+    S = (pow(R, -1, N) * blind_signature) % N 
+    print(blind_signature, S)
+    is_sign: bool = rsa_digital_signature_verification.verification(S, D)
+    print(f"Is D={D} the blind signed document by Samantha?\n{is_sign}")
