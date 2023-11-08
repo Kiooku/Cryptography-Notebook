@@ -69,11 +69,13 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [ ] The Boneh Franklin Id Based PKC
 
-### Identiﬁcation Schemes
-
-- [ ] Feige–Fiat–Shamir identification scheme
+### Commitment Schemes
 
 - [ ] The Pedersen commitment scheme
+
+### Identiﬁcation Schemes
+
+- [X] [Feige–Fiat–Shamir identification scheme](./IdentiﬁcationSchemes/feige-fiat-shamir-identification-scheme/README.md)
 
 - [ ] Schnorr's sigma protocol
 
@@ -81,7 +83,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 > **Note** Work in progress
 
-- [X] RSA Digital Signatures
+- [X] [RSA Digital Signatures](./DigitalSignatures/RSA_Digital_Signatures/README.md)
 
 - [X] Elgamal Digital Signatures
 
