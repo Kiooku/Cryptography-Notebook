@@ -2,7 +2,7 @@
 
 Zero-knowledge proof used to prove that Alice is really her for Bob.
 
-The **prover** claims that $y$ is a square modulo $N$. And hence, this is what the **prover** wants to convince the **verifier** about without revealing any information *(the value of $x$)* such that the **verifier** can convince other people about that $y$ is a square modulo $N$.
+The **prover** claims that $y$ is a square modulo $N$. And hence, this is what the **prover** wants to convince the **verifier** about without revealing any information *(the value of* $x$*)* such that the **verifier** can convince other people about that $y$ is a square modulo $N$.
 
 ## Algorithm
 
