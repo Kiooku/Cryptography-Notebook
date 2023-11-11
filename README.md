@@ -71,7 +71,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### Commitment Schemes
 
-- [ ] The Pedersen commitment scheme
+- [X] [The Pedersen commitment scheme](./CommitmentScheme/pedersen-commitment-scheme/README.md)
 
 ### Identiﬁcation Schemes
 
