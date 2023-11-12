@@ -77,7 +77,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] [Feige–Fiat–Shamir identification scheme](./IdentiﬁcationSchemes/feige-fiat-shamir-identification-scheme/README.md)
 
-- [ ] Schnorr's sigma protocol
+- [X] [Schnorr's sigma protocol](./IdentiﬁcationSchemes/schnorr_sigma_protocol/README.md)
 
 ### Digital Signatures
 
