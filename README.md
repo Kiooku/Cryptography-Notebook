@@ -125,6 +125,12 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [ ] fsrRand
 
+### One-Time pad
+
+> **Note** One-Time pad can be really simple to code, so I did it in assembly
+
+- [X] [XOR based one-time pad](./OneTimePad/README.md)
+
 ### End-to-end encryption
 
 > **Note** Need to learn more
@@ -211,3 +217,5 @@ Learn, understand, and create project is a long process, which is why the reposi
 - [An Introduction to Mathematical Cryptography (Second Edition)](https://link.springer.com/book/10.1007/978-1-4939-1711-2)
 
 - [CryptoHack](https://cryptohack.org/)
+
+- [Cryptography Academy](https://cryptographyacademy.com/identification-schemes/)
