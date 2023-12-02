@@ -44,7 +44,9 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] [GGH cryptosystem](./AsymmetricCiphers/GGH_cryptosystem/README.md)
 
-- [X] [NTRUEncrypt cryptosystem](./AsymmetricCiphers//NTRUEncrypt/README.md)
+- [X] [NTRUEncrypt cryptosystem](./AsymmetricCiphers/NTRUEncrypt/README.md)
+
+- [X] [X3DH](./AsymmetricCiphers/x3dh/README.md)
 
 #### Attacks
 
