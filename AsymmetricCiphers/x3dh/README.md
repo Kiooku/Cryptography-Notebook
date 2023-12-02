@@ -26,5 +26,8 @@ The algorithm is well described on [Signal](https://signal.org/docs/specificatio
 
 However, I have tried to draw a diagram to make it easier to understand the protocol.
 
+![X3DH ](https://github.com/Kiooku/Cryptography-Notebook/assets/33032066/325cf0bc-f57b-4ef3-b0ea-2742e449f2ba)
+
+
 ## Resource
 - https://signal.org/docs/specifications/x3dh/
