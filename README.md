@@ -24,29 +24,29 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 #### Implementations
 
-- [X] [Diffie-Hellman Key Exchange](./AsymmetricCiphers/Diffie_Hellman/README.md)
+- [X] [Diffie-Hellman Key Exchange](./AsymmetricCiphers/Diffie_Hellman/)
 
-- [X] [ElGamal PKC](./AsymmetricCiphers/ElGamal/README.md)
+- [X] [ElGamal PKC](./AsymmetricCiphers/ElGamal/)
 
-- [X] [RSA](./AsymmetricCiphers/RSA/README.md)
+- [X] [RSA](./AsymmetricCiphers/RSA/)
 
-- [X] [Goldwasser–Micali Probabilistic PKC](./AsymmetricCiphers/GoldwasserMicaliProbabilisticPKC/README.md)
+- [X] [Goldwasser–Micali Probabilistic PKC](./AsymmetricCiphers/GoldwasserMicaliProbabilisticPKC/)
 
-- [X] [Elliptic Diffie-Hellman Key Exchange](./AsymmetricCiphers/Elliptic_Diffie_Hellman/README.md)
+- [X] [Elliptic Diffie-Hellman Key Exchange](./AsymmetricCiphers/Elliptic_Diffie_Hellman/)
 
-- [X] [Elliptic Elgamal Public Key Cryptosystem](./AsymmetricCiphers/EllipticElgamalPKC/README.md)
+- [X] [Elliptic Elgamal Public Key Cryptosystem](./AsymmetricCiphers/EllipticElgamalPKC/)
 
 - [ ] Menezes-Vanstone variant of the Elliptic Elgamal PKC
 
-- [X] [Tripartite Diffie-Hellman Key Exchange](./AsymmetricCiphers/Tripartite_Diffie_Hellman_Key_Exchange/README.md)
+- [X] [Tripartite Diffie-Hellman Key Exchange](./AsymmetricCiphers/Tripartite_Diffie_Hellman_Key_Exchange/)
 
-- [X] [The Merkle–Hellman subset-sum cryptosystem](./Mathematics/Lattice/SubsetSum/README.md)
+- [X] [The Merkle–Hellman subset-sum cryptosystem](./Mathematics/Lattice/SubsetSum/)
 
-- [X] [GGH cryptosystem](./AsymmetricCiphers/GGH_cryptosystem/README.md)
+- [X] [GGH cryptosystem](./AsymmetricCiphers/GGH_cryptosystem/)
 
-- [X] [NTRUEncrypt cryptosystem](./AsymmetricCiphers/NTRUEncrypt/README.md)
+- [X] [NTRUEncrypt cryptosystem](./AsymmetricCiphers/NTRUEncrypt/)
 
-- [X] [X3DH](./AsymmetricCiphers/x3dh/README.md)
+- [X] [X3DH](./AsymmetricCiphers/x3dh/)
 
 #### Attacks
 
@@ -73,19 +73,19 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### Commitment Schemes
 
-- [X] [The Pedersen commitment scheme](./CommitmentScheme/pedersen-commitment-scheme/README.md)
+- [X] [The Pedersen commitment scheme](./CommitmentScheme/pedersen-commitment-scheme/)
 
 ### Identiﬁcation Schemes
 
-- [X] [Feige–Fiat–Shamir identification scheme](./IdentiﬁcationSchemes/feige-fiat-shamir-identification-scheme/README.md)
+- [X] [Feige–Fiat–Shamir identification scheme](./IdentiﬁcationSchemes/feige-fiat-shamir-identification-scheme/)
 
-- [X] [Schnorr's sigma protocol](./IdentiﬁcationSchemes/schnorr_sigma_protocol/README.md)
+- [X] [Schnorr's sigma protocol](./IdentiﬁcationSchemes/schnorr_sigma_protocol/)
 
 ### Digital Signatures
 
 > **Note** Work in progress
 
-- [X] [RSA Digital Signatures](./DigitalSignatures/RSA_Digital_Signatures/README.md)
+- [X] [RSA Digital Signatures](./DigitalSignatures/RSA_Digital_Signatures/)
 
 - [X] Elgamal Digital Signatures
 
@@ -93,7 +93,7 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 - [X] Elliptic Curve Digital Signature Algorithm (ECDSA)
 
-- [X] [GGH Digital Signature Scheme](./DigitalSignatures/GGH_Digital_Signature/README.md)
+- [X] [GGH Digital Signature Scheme](./DigitalSignatures/GGH_Digital_Signature/)
 
 - [ ] NTRU Modular Lattice Signature Scheme (NTRUMLS)
 
@@ -103,11 +103,11 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### Message Authentification
 
-- [X] [HMAC](./MessageAuthentification/README.md)
+- [X] [HMAC](./MessageAuthentification/)
 
 ### Key Derivation Function
 
-- [X] [HKDF](./KeyDerivationFunction/HKDF/README.md)
+- [X] [HKDF](./KeyDerivationFunction/HKDF/)
 
 ### Secret Sharing Schemes
 
@@ -131,13 +131,13 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 > **Note** One-Time pad can be really simple to code, so I did it in assembly
 
-- [X] [XOR based one-time pad](./OneTimePad/README.md)
+- [X] [XOR based one-time pad](./OneTimePad/)
 
 ### End-to-end encryption
 
 > **Note** Need to learn more
 
-- [ ] Signal Double Ratchet Algorithm
+- [X] [Double Ratchet Algorithm](./E2EE/double-ratchet-algorithm/)
 
 ### Zero-Knowledge Proofs
 
@@ -221,3 +221,5 @@ Learn, understand, and create project is a long process, which is why the reposi
 - [CryptoHack](https://cryptohack.org/)
 
 - [Cryptography Academy](https://cryptographyacademy.com/identification-schemes/)
+
+- [Signal](https://signal.org/docs/)
