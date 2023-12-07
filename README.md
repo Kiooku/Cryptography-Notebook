@@ -135,9 +135,9 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### End-to-end encryption
 
-> **Note** Need to learn more
-
 - [X] [Double Ratchet Algorithm](./E2EE/double-ratchet-algorithm/)
+
+- [X] [Double Ratchet with header encryption](./E2EE/double-ratchet-with-header-encryption/)
 
 ### Zero-Knowledge Proofs
 
@@ -223,3 +223,5 @@ Learn, understand, and create project is a long process, which is why the reposi
 - [Cryptography Academy](https://cryptographyacademy.com/identification-schemes/)
 
 - [Signal](https://signal.org/docs/)
+
+- [Serious Cryptography A Practical Introduction to Modern Encryption](https://nostarch.com/seriouscrypto)

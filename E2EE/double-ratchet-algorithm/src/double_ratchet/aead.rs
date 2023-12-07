@@ -46,7 +46,7 @@ pub fn encrypt(mk: [u8; 32], plaintext: &[u8], ad: &[u8]) -> Result<(Vec<u8>, Ve
 /// 
 /// # Output
 /// 
-/// * `(ciphertext, nonce)` (Result\<Vec\<u8\>, CryptoError\>): Plaintext
+/// * `plaintext` (Result\<Vec\<u8\>, CryptoError\>): Plaintext
 pub fn decrypt(mk: [u8; 32], ciphertext: &Vec<u8>, nonce: &Vec<u8>, ad: &[u8]) -> Result<Vec<u8>, CryptoError> {
     let cipher = Aes256GcmSiv::new(&GenericArray::clone_from_slice(&mk));
     let payload = Payload {
