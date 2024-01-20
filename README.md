@@ -214,6 +214,10 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 > **Note** Need to learn
 
+### Cryptography projects
+
+- [X] [mini-signal](https://github.com/Kiooku/mini-signal)
+
 ## Resources
 
 - [An Introduction to Mathematical Cryptography (Second Edition)](https://link.springer.com/book/10.1007/978-1-4939-1711-2)
