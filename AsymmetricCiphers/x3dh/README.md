@@ -8,7 +8,8 @@ X3DH is designed for **asynchronous settings** where one user ("Bob") is offline
 
 This algorithm is recommended for implementing the **Double Ratchet algorithm** *(E2EE)*  initialization.
 
-> **Note**: There's a rust library for [x3dh](https://github.com/dione-software/x3dh-ke), however, the library use the **NIST P-256** elliptic curve instead of **Curve25519** or **Curve448** according to Signal recommendations.
+> [!NOTE] 
+> There's a rust library for [x3dh](https://github.com/dione-software/x3dh-ke), however, the library use the **NIST P-256** elliptic curve instead of **Curve25519** or **Curve448** according to Signal recommendations.
 >
 > The use of another curve than the one expected lead to different key size, which make the implementation of the Double Ratchet algorithm using the recommended curve impossible. That's why I decided to implemented my own X3DH using the **Curve25519** for learning purpose.
 

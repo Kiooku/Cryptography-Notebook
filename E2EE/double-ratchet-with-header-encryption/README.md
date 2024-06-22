@@ -4,7 +4,9 @@ This is the **header encryption** variant of the [Double Ratchet Algorithm](../d
 
 ## Algorithm
 
-> **Note**: Initializing the two parts requires a `shared_hka` and a `shared_nhkb`.
+> [!NOTE] 
+>
+> Initializing the two parts requires a `shared_hka` and a `shared_nhkb`.
 >
 > However, Signal doesn't describe how to generate them, and I haven't not been able to find a resource on the internet explaining the correct way to generate them.
 > 

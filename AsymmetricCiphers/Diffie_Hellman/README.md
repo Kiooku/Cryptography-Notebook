@@ -4,7 +4,8 @@
 
 The Diffie-Helman key exchange algorithm provides a **method of publicly sharing a random secret key**, it does not achieve the full goal of being a public key cryptosystem.
 
-> **Note** The security is based on the **Discrete Logarithms Problem** (DLP) and **Diffie-Hellman Problem** (DHP)
+> [!NOTE] 
+> The security is based on the **Discrete Logarithms Problem** (DLP) and **Diffie-Hellman Problem** (DHP)
 
 The **Diffie-Hellman Problem** is the problem of computing the value of $g^{ab}\text{ (mod }p\text{)}$ from the known values of $g^a\text{ (mod }p\text{)}$ and $g^b\text{ (mod }p\text{)}$.
 

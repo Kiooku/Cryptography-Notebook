@@ -4,7 +4,8 @@ The GGH cryptosystem is a lattice-based cryptosystem.
 
 ## Algorithm
 
-> **Note** Bob wants to send a message to Alice using GGH cryptosystem.
+> [!NOTE] 
+> Bob wants to send a message to Alice using GGH cryptosystem.
 
 ### Key Creation
 

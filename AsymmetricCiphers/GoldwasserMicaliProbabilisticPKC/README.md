@@ -8,11 +8,13 @@ Consequently, each bit (0 or 1) can be encrypted differently each time, using th
 
 To do that, Alice chooses a plaintext $m$ and a random string of data $r$, and then she uses Bob's public key to encrypt the pair $(m,r)$.
 
-> **Note** This is an impractical PKC, because the encryption is done bit by bit. Moreover, this PKC has a ***message expansion ratio*** of 1000. Which mean that a ciphertext is 1000 times as long as the plaintext.
+> [!NOTE] 
+> This is an impractical PKC, because the encryption is done bit by bit. Moreover, this PKC has a ***message expansion ratio*** of 1000. Which mean that a ciphertext is 1000 times as long as the plaintext.
 
 ## Algorithm
 
-> **Note** Alice wants to send a bit to Bob using the Goldwasser-Micali Probabilistic Cryptosystem.
+> [!NOTE] 
+> Alice wants to send a bit to Bob using the Goldwasser-Micali Probabilistic Cryptosystem.
 
 ### Key creation
 

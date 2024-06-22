@@ -10,7 +10,8 @@ A **commitment scheme** allows one to commit to a chosen value *(or chosen state
 
 **Generator**: $g=g_1^{(p-1) / q} \text{(mod }p)$ 
 
-> **Note**: $g_1$ is a generator of the group $\mathbb{Z}_p$.
+> [!NOTE] 
+> $g_1$ is a generator of the group $\mathbb{Z}_p$.
 
 ### Initialization
 

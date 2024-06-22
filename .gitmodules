@@ -1,0 +1,3 @@
+[submodule "mini-signal"]
+	path = mini-signal
+	url = https://github.com/Kiooku/mini-signal.git

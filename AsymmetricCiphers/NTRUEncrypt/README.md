@@ -18,7 +18,8 @@ $$
 
 ## Algorithm
 
-> **Note** Bob wants to send a message to Alice using NTRUEncrypt cryptosystem.
+> [!NOTE] 
+> Bob wants to send a message to Alice using NTRUEncrypt cryptosystem.
 
 ### Public parameter creation (Chosen by a trusted party)
 

@@ -6,7 +6,8 @@ The Elgamal public key encryption algorithm is based on the **discrete log probl
 
 ## Algorithm
 
-> **Note** Bob wants to send a message to Alice using Elgamal PKC.
+> [!NOTE] 
+> Bob wants to send a message to Alice using Elgamal PKC.
 
 ### Public parameter creation
 
@@ -30,7 +31,8 @@ Finally, he sends the **ciphertext** $(c_1,c_2)$ to Alice.
 
 Alice computes $(c_1^a)^{-1}\cdot c_2\text{ (mod }p\text{)}$ which is equal to $m$.
 
-> **Note** The operation can be broken down as follows:
+> [!NOTE] 
+> The operation can be broken down as follows:
 > 
 > $x\equiv (c_1^a)^{-1}\equiv c_1^{p-1-a}$
 >
@@ -39,7 +41,8 @@ Alice computes $(c_1^a)^{-1}\cdot c_2\text{ (mod }p\text{)}$ which is equal to $
 
 ## Attacks using oracle
 
-> **Note** [Click here to see the code corresponding to this attack](./ElGamalAttack.py)
+> [!NOTE] 
+> [Click here to see the code corresponding to this attack](./ElGamalAttack.py)
 
 In this scenario, the oracle decrypts arbitrary Elgamal ciphertexts encrypted using arbitrary Elgamal public keys.
 
@@ -63,7 +66,8 @@ Then Eve can take the inverse modulo $p$ to obtain $g^{ab}\text{ (mod }p\text{)}
 
 ### Smarter decryption oracle
 
-> **Note** Now the oracle know that it should never decrypt ciphertexts having $c_2=1$.
+> [!NOTE] 
+> Now the oracle know that it should never decrypt ciphertexts having $c_2=1$.
 
 So Even chooses an arbitrary value for $c_2$ and set $c_1=B$. Then she tells the oracle that the public key is $A$ and give the ciphertext $(c_1,c_2)$.
 

@@ -4,7 +4,8 @@
 
 ## Chosen ciphertext attack
 
-> **Note** Some examples will follow later
+> [!NOTE] 
+> Some examples will follow later
 
 *"A chosen ciphertext attack can gather information by obtaining the decryption of chosen ciphertexts. From these pieces of information the adversary can attempt to recover the hidden secret key used for decryption."*
 
@@ -14,7 +15,8 @@
 
 ### Decryption Oracle
 
-> **Note** It's not an attack, but it can be an attack vector.
+> [!NOTE] 
+> It's not an attack, but it can be an attack vector.
 
 A decryption oracle is a computational tool or a function that is capable of performing decryption operations on ciphertexts.
 
@@ -24,7 +26,8 @@ A decryption oracle specifically focuses on the decryption process. It takes an 
 
 ### Padding oracle attack
 
-> **Note** Need to write this section
+> [!NOTE] 
+> Need to write this section
 
 ### Code example
 

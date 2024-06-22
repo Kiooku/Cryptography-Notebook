@@ -13,7 +13,8 @@
 
 **ipad**: the byte `0x36` repeated B times
 **opad**: the byte `0x5C` repeated B times.
-> **Note**: *(the 'i' and 'o' are mnemonics for inner and outer)*
+> [!NOTE] 
+> *(the 'i' and 'o' are mnemonics for inner and outer)*
 
 ### Compute
 

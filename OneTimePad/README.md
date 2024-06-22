@@ -18,7 +18,8 @@ If you're not working on bits, you can use a variant that is the **Vigenère cip
 
 *Vigenère variante*:
 
-> **Note**: We use a latin alphabet, hence the modulo 26.
+> [!NOTE] 
+> We use a latin alphabet, hence the modulo 26.
 
 **Encryption**: $C = M + K \text{ (mod } 26)$
 
@@ -30,7 +31,8 @@ I've coded a XOR based one time pad, and as you can see it's pretty straightforw
 
 ### Instruction
 
-> **Note**: on a Linux machine using NASM
+> [!NOTE] 
+> on a Linux machine using NASM
 
 - Execute `./xorBasedOneTimePad`
 - Re-build the executable:

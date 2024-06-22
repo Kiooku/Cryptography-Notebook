@@ -2,7 +2,8 @@
 
 Tripartite Diffie-Hellman Key Exchange is a Diffie-Hellman key exchange based on elliptic curve over a finite field, which enables the generation of a shared secret between 3 different people.
 
-> **Note** The security is based on the **Elliptic Curve Discrete Logarithm Problem** (ECDLP), **Elliptic Curve Diffie-Hellman Problem** and **Discrete Logatithm Problem**
+> [!NOTE] 
+> The security is based on the **Elliptic Curve Discrete Logarithm Problem** (ECDLP), **Elliptic Curve Diffie-Hellman Problem** and **Discrete Logatithm Problem**
 
 ### Prerequisite
 - Basic knowledge of elliptic curves, weil pairing and l-distortion map
@@ -42,7 +43,8 @@ Carl sends $Q_C$ to Alice and Bob.
 
 ### Shared secret computations
 
-> **Note** $ê_l(Q, Q') = e_l(Q, \phi(Q'))$
+> [!NOTE]
+> $ê_l(Q, Q') = e_l(Q, \phi(Q'))$
 
 | Alice   |      Bob      |  Carl |
 |----------|:-------------:|------:|

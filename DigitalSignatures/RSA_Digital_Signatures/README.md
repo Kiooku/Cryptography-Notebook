@@ -24,7 +24,8 @@ Compute $S^e \text{(mod }N)$ and verify that it's equal to $D$.
 
 ## How do you convert it into a blind digital signature scheme?
 
-> **Note** A blind digital signature is when the document to be signed is ﬁrst blinded (concealed) and then signed. In this way, the signed document is not revealed to the signing authority.
+> [!NOTE] 
+> A blind digital signature is when the document to be signed is ﬁrst blinded (concealed) and then signed. In this way, the signed document is not revealed to the signing authority.
 
 The only thing to change is to slighly modify the document before the signature.
 

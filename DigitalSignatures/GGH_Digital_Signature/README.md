@@ -8,7 +8,8 @@ Digital signature base on the [GGH cryptosystem](../../AsymmetricCiphers/GGH_cry
 
 ### Key creation
 
-> **Note** Same as GGH cryptosystem
+> [!NOTE] 
+> Same as GGH cryptosystem
 
 **Private key**: Orthogonal basis $V$.
 

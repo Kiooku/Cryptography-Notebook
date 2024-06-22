@@ -22,7 +22,8 @@ Compute $a = r^2\text{ (mod }N)$
 
 ---
 
-> **Note**: The **challenge**, **response** and **verification** should be perform $i$ times to make sure that you really have the knowledge of the secret value.
+> [!NOTE] 
+> The **challenge**, **response** and **verification** should be perform $i$ times to make sure that you really have the knowledge of the secret value.
 
 ### Challenge *(Verifier)*
 

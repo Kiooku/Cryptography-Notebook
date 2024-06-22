@@ -12,7 +12,8 @@ $p$ satisfies that $p\equiv 1 \text{ (mod } q)$
 
 **Generator**: $g=g_1^{(p-1) / q} \text{(mod }p)$ 
 
-> **Note**: $g_1$ is a generator of the group $\mathbb{Z}^*_p$.
+> [!NOTE] 
+> $g_1$ is a generator of the group $\mathbb{Z}^*_p$.
 
 ### Initialization
 

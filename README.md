@@ -14,13 +14,15 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### Symmetric Ciphers
 
-> **Note** Work in progress
+> [!NOTE] 
+> Work in progress
 
 - [ ] AES (ECB / CBC / CFB / OFB / CTR)
 
 ### Asymmetric Ciphers
 
-> **Note** Work in progress
+> [!NOTE] 
+> Work in progress
 
 #### Implementations
 
@@ -83,7 +85,8 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### Digital Signatures
 
-> **Note** Work in progress
+> [!NOTE] 
+> Work in progress
 
 - [X] [RSA Digital Signatures](./DigitalSignatures/RSA_Digital_Signatures/)
 
@@ -99,7 +102,8 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### Hash Functions
 
-> **Note** Basic knowledge -> Need to learn more
+> [!NOTE]
+> Basic knowledge -> Need to learn more
 
 ### Message Authentification
 
@@ -117,7 +121,8 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### PRNG
 
-> **Note** Need to learn
+> [!NOTE] 
+> Need to learn
 
 - [ ] ANSI X9.17 PRNG
 
@@ -129,7 +134,8 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### One-Time pad
 
-> **Note** One-Time pad can be really simple to code, so I did it in assembly
+> [!NOTE] 
+> One-Time pad can be really simple to code, so I did it in assembly
 
 - [X] [XOR based one-time pad](./OneTimePad/)
 
@@ -141,21 +147,25 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### Zero-Knowledge Proofs
 
-> **Note** Need to learn
+> [!NOTE] 
+> Need to learn
 
 ### Homomorphic Encryption
 
-> **Note** Ongoing learning of lattices to understand homomorphic encryption
+> [!NOTE] 
+> Ongoing learning of lattices to understand homomorphic encryption
 
 ### Post-Quantum
 
-> **Note** Ongoing learning of lattices and learning with errors to understand Post-Quantum cryptography
+> [!NOTE] 
+> Ongoing learning of lattices and learning with errors to understand Post-Quantum cryptography
 
 ### Mathematics
 
 #### Algorithm and Theorem
 
-> **Note** Work in progress
+> [!NOTE] 
+> Work in progress
 
 - [X] Euclidean algorithm
 
@@ -212,7 +222,8 @@ Learn, understand, and create project is a long process, which is why the reposi
 
 ### Learning with errors (LWE)
 
-> **Note** Need to learn
+> [!NOTE] 
+> Need to learn
 
 ### Cryptography projects
 

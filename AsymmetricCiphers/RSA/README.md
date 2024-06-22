@@ -12,7 +12,8 @@ The security of the algorithm is base on the principle: $x^e\equiv c\text{ (mod 
 
 ## Algorithm
 
-> **Note** Alice wants to send a message to Bob using RSA PKC.
+> [!NOTE] 
+> Alice wants to send a message to Bob using RSA PKC.
 
 ### Key creation
 

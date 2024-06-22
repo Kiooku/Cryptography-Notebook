@@ -2,7 +2,8 @@
 
 Elliptic Diffie-Hellman Key Exchange is a Diffie-Hellman key exchange based on elliptic curve over a finite field.
 
-> **Note** The security is based on the **Elliptic Curve Discrete Logarithm Problem** (ECDLP) and **Elliptic Curve Diffie-Hellman Problem**
+> [!NOTE] 
+> The security is based on the **Elliptic Curve Discrete Logarithm Problem** (ECDLP) and **Elliptic Curve Diffie-Hellman Problem**
 
 ### Prerequisite
 - Basic knowledge of elliptic curves
@@ -34,7 +35,8 @@ Alice sends $Q_A$ to Bob.
 
 Bob sends $Q_B$ to Alice.
 
-> **Note** The public exchange can be with only the $x_a$ and $x_b$ value of the points $Q_A$ and $Q_B$.
+> [!NOTE] 
+> The public exchange can be with only the $x_a$ and $x_b$ value of the points $Q_A$ and $Q_B$.
 
 ### Shared secret computations
 

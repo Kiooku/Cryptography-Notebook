@@ -9,7 +9,8 @@ The Elliptic Elgamal public key cryptography algorithm is based on the **Ellipti
 
 ## Algorithm
 
-> **Note** Bob wants to send a message to Alice using Elliptic Elgamal PKC.
+> [!NOTE] 
+> Bob wants to send a message to Alice using Elliptic Elgamal PKC.
 
 ### Public parameter creation
 
@@ -36,7 +37,8 @@ Finally, he sends the **ciphertext** $(C_1,C_2)$ to Alice.
 
 Alice computes $C_2 - n_AC_1 \in E(\mathbb{F}_p)$ which is equal to $M$.
 
-> **Note** The operation can be broken down as follows:
+> [!NOTE] 
+> The operation can be broken down as follows:
 > 
 > $C_2 - n_AC_1 = (M + kQ_A) - n_A(kP) = M + k(n_AP) - n_A(kP) = M$
 
